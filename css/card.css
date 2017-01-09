@@ -1,0 +1,49 @@
+.videoCard {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    height: 500px;
+    margin: 1rem;
+    overflow: auto;
+    width: 300px;
+}
+
+.videoCard:hover {
+    box-shadow: 0 5px 28px rgba(0, 0, 0, 0.2), 0 5px 5px rgba(0, 0, 0, 0.10);
+}
+
+.videoCover {
+    display: block;
+}
+
+.infoDiv {
+    background-color: #1976D2;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    box-sizing: border-box;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 5px;
+
+}
+.infoDiv h3{
+     font-size: 1em;
+}
+
+.views {
+    line-height: 7px;
+    margin-left: 10px;
+    text-align: right;
+}
+
+.publishDay {
+    font-size: 1em;
+    padding: 0 20px;
+}
+
+.description {
+    display: block;
+    font-size: 0.9em;
+    overflow: hidden;
+    padding: 0 20px;
+}

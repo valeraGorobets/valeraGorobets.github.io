@@ -1,0 +1,27 @@
+.touchgallery {
+    background: #eee;
+    height: 520px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.touchgallery ul {
+    left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+.touchgallery ul li {
+    display: block;
+    float: left;
+    text-align: center;
+    width: 450px;
+}
+
+.touchgallery ul li img {
+    height: auto;
+    max-width: 100%;
+}
