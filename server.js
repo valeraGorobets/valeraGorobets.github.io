@@ -10,7 +10,7 @@ var port = 3000;
 var app = express();
 
 //View Engine
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname));
 app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
 
