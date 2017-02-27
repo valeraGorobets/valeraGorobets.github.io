@@ -1,0 +1,24 @@
+<div class="home-container-header">
+  <p class="home-container-header-title">
+    {{category.currentCategory.title}}
+  </p>
+</div>
+<div class="home-container-body">
+  <form class="add-todo" ng-submit="category.addTodo()">
+    <button type="submit" class="add-todo-icon">
+        +
+      </button>
+    <div class="add-todo-input">
+      <div class="form-group">
+        <input type="text" placeholder="Add a to-do..." ng-model="category.todoTitle" class="form-control">
+      </div>
+    </div>
+  </form>
+  <div>
+    <ul sortable-list class="todos-container">
+      <li class="todo-item" ng-repeat="todo in category.currentCategory.todos track by $index">
+        <span class="glyphicon glyphicon-remove remove-icon" ng-click="category.deleteTodo(todo)"></span> {{todo.title}}
+      </li>
+    </ul>
+  </div>
+</div>

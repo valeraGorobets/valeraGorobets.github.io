@@ -1,29 +1,32 @@
 var express = require('express');
-var path = require('path');
+var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
+var path = require('path');
 
-var index = require('./routes/index');
-var tasks = require('./routes/tasks');
+require('./server/db/models/Todo');
+require('./server/db/models/User');
+require('./server/db/models/Category');
 
-var port = 3000;
+var index = require('./server/routes/index');
+var todos = require('./server/routes/todos');
+var categories = require('./server/routes/categories');
+
+mongoose.connect('mongodb://valera.gorobets:Valera1997@ds161109.mlab.com:61109/todo_mean_app');
 
 var app = express();
 
-//View Engine
-app.set('views', path.join(__dirname));
-app.set('view engine', 'ejs');
-app.engine('html', require('ejs').renderFile);
-
-// Set Static Folder
-app.use(express.static(path.join(__dirname, 'client')));
-
-// Body Parser MW
+app.use(bodyParser.urlencoded({
+  extended: false
+}));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(express.static(path.join(__dirname, 'app')));
 
 app.use('/', index);
-app.use('/api', tasks);
+app.use('/', todos);
+app.use('/', categories);
 
-app.listen(port, function(){
-    console.log('Server started on port '+port);
+app.set('port', (process.env.PORT || 5000));
+
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
 });
