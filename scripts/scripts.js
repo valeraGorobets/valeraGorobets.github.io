@@ -31,7 +31,8 @@ window.onload = function() {
     links.map((link) => {
         document.getElementById(link).href += url;
         if(link ==="twitterLink"){
-            document.getElementById(link).href += "&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons";
+            // document.getElementById(link).href += "&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons";
+            // document.getElementById(link).href += "&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons";
         }
     })
 }
