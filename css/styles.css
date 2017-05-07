@@ -1,0 +1,316 @@
+@font-face {
+    font-family: OswaldRegular;
+    src: url(../fonts/Oswald-Regular.ttf);
+}
+
+@font-face {
+    font-family: OswaldLight;
+    src: url(../fonts/Oswald-Light.ttf);
+}
+
+section:not(:last-child) {
+    margin-bottom: 2.5rem;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+button {
+    outline: none;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 25px 0 0;
+    font-family: Lato, sans-serif;
+    overflow-x: hidden;
+    font-size: 10px;
+}
+
+.navbar-toggle {
+    padding: 0;
+    background-color: red;
+}
+
+
+/*@media screen and (max-width: 991px) {*/
+
+@media screen and (max-width: 1025px) {
+    body,
+    html {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body,
+    html {
+        font-size: 5px;
+    }
+}
+
+body {
+    /*background-image: url("../images/mainBlurd.jpg");*/
+    /*background-repeat: repeat-y;*/
+    /*background-size: contain;*/
+}
+
+.navbar {
+    background-color: #777;
+    color: #e7e7e7;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    min-height: 0;
+}
+
+.header {}
+
+.header .navbar-brand {
+    height: 6.2rem;
+    padding: 0;
+    min-height: 50px;
+}
+
+.header .navbar-brand img {
+    height: 100%;
+}
+
+.header .navbar a {
+    color: #fff;
+}
+
+.header .navbar a:hover,
+.header .navbar .active {
+    background-color: #4fcbc9;
+}
+
+.header li a {
+    height: 6.2rem;
+    line-height: 35px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.mainLogo {
+    padding: 0;
+    position: relative;
+}
+
+.mainLogo img {
+    width: 100%;
+}
+
+.mainLogo .title {
+    position: absolute;
+    top: 0;
+    right: 85px;
+    width: 31%;
+    color: #575252;
+}
+
+.mainLogo .companyTitle {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 3.4rem;
+    line-height: 4.5rem;
+    text-transform: uppercase;
+}
+
+
+/*.mainLogo {
+    height: 560px;
+}
+
+.content-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+
+.mainLogo .container {
+    background-color: red;
+    position: relative;
+}
+
+.mainLogo img {
+    width: 100%;
+    position: absolute
+}
+
+.mainLogo .title {
+    position: absolute;
+    top: 0;
+    right: 85px;
+    width: 31%;
+    color: #575252;
+}
+
+.mainLogo .companyTitle {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 3.4rem;
+    line-height: 4.5rem;
+    text-transform: uppercase;
+}*/
+
+.line {
+    text-align: center;
+    position: relative;
+    padding: 7rem;
+    font-family: OswaldRegular;
+    font-size: 3rem;
+    font-style: italic;
+}
+
+.blueAccent {
+    background-color: #4fcbc9;
+}
+
+.whiteAccent {
+    background-color: #ECECEC;
+}
+
+.grayAccent {
+    background-color: #777;
+}
+
+.articleSection {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.articleSection h1 {
+    font-family: OswaldRegular;
+    padding: 0 40px;
+}
+
+.articleSection .article {
+    margin-bottom: 30px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.8rem;
+}
+
+#services button {
+    border-radius: 50px;
+    width: 92px;
+    padding: 0;
+    font-size: 0.4rem;
+    background-color: #4fcbc9;
+    color: #fff;
+    padding: 1px 30px 0px 0px;
+    margin-top: 10px;
+}
+
+.articleSection h1 {
+    font-size: 3.6rem;
+}
+
+.articleSection h3 {
+    border-color: #4fcbc9;
+    border-style: solid none;
+    border-width: 0 0 1px 0;
+    color: #202628;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 2.1rem;
+    padding: 0px 40px;
+    text-transform: uppercase;
+}
+
+.articleSection .col-md-12 {
+    padding-left: 0
+}
+
+.glyphicon {
+    font-size: 2.5rem;
+}
+
+#share-buttons img {
+    width: 5rem;
+    /*padding: 5px;*/
+    border: 0;
+    box-shadow: 0;
+    display: inline;
+}
+#copy img{
+    padding: 0;
+}
+
+#share-buttons img:hover {
+    transform: scale(1.1, 1.1)
+}
+
+#share-buttons #copy {
+    border-radius: 50%;
+    padding: 0;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+}
+
+.contacts .row {
+    padding: 30px 0;
+    border: solid #e7e7e7;
+    border-width: 0 0 1px
+}
+
+.contacts .row:first-of-type {
+    border-top-width: 1px
+}
+
+.contacts .contact-info .glyphicon {
+    font-size: 2rem;
+}
+
+.contacts .contact-info h3 {
+    font-weight: 700;
+    margin-top: 0;
+    font-size: 1.6rem;
+    color: #4fcbc9
+}
+
+.contacts .contact-info address {
+    margin: 0
+}
+
+.contacts .contact-info address a {
+    font-family: 'Lato Black', sans-serif;
+    font-size: 2rem;
+    color: #767c7e
+}
+.contacts a:hover{
+    text-decoration: underline;
+}
+
+.contacts .contact-info .row:last-of-type {
+    padding: 34px 0
+}
+
+.footer {
+    margin-top: 10px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer .ip {
+    font-family: OswaldRegular;
+    color: #e7e7e7;
+    font-size: 1.8rem;
+    padding: 10px;
+}
