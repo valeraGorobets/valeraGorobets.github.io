@@ -5,7 +5,7 @@ $(".hideForAtime").click(function() {
 
 function initMap() {
     var position = { lat: 53.932761, lng: 27.433571 };
-    var zoomValue = $(window).width()<400 ? 13:15; 
+    var zoomValue = $(window).width() < 400 ? 13 : 15;
 
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: zoomValue,
@@ -25,3 +25,13 @@ $("#copy").click(function() {
     document.execCommand("copy");
     $temp.remove();
 })
+window.onload = function() {
+    let url = window.location.toString();
+    let links = ["emailLink", "facebookLink", "googleLink", "twitterLink", "vkLink"];
+    links.map((link) => {
+        document.getElementById(link).href += url;
+        if(link ==="twitterLink"){
+            document.getElementById(link).href += "&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons";
+        }
+    })
+}
