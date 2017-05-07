@@ -37,9 +37,14 @@ html {
 
 .navbar-toggle {
     padding: 0;
-    background-color: red;
+    /*background-color: red;*/
 }
-
+.glyphicon {
+    font-size: 2.5rem;
+}
+.navbar-toggle .glyphicon{
+    font-size: 30px;
+}
 
 /*@media screen and (max-width: 991px) {*/
 
@@ -204,12 +209,12 @@ body {
 
 #services button {
     border-radius: 50px;
-    width: 92px;
+    width: 9.2rem;
     padding: 0;
     font-size: 0.4rem;
     background-color: #4fcbc9;
     color: #fff;
-    padding: 1px 30px 0px 0px;
+    padding: 1px 3rem 0px 0px;
     margin-top: 10px;
 }
 
@@ -232,9 +237,7 @@ body {
     padding-left: 0
 }
 
-.glyphicon {
-    font-size: 2.5rem;
-}
+
 
 #share-buttons img {
     width: 5rem;
