@@ -96,10 +96,10 @@ body {
 }
 
 .header li a {
-    height: 6.2rem;
+    height: 62px;
     line-height: 35px;
     font-family: 'Oswald', sans-serif;
-    font-size: 1.8rem;
+    font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
 }
