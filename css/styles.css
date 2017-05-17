@@ -29,7 +29,7 @@ button {
 body,
 html {
     padding: 0;
-    margin: 32px 0 0;
+    margin: 25px 0 0;
     font-family: Lato, sans-serif;
     overflow-x: hidden;
     font-size: 10px;
@@ -38,36 +38,29 @@ html {
 .navbar-toggle {
     padding: 0;
 }
-.glyphicon {
-    font-size: 2.5rem;
-}
-.navbar-toggle .glyphicon{
-    font-size: 30px;
-}
 
-
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 990px) {
     body,
     html {
         font-size: 8px;
     }
 }
 
-@media screen and (max-width: 500px) {
-    body,
-    html {
-        font-size: 5px;
+@media screen and (max-width: 596px) {
+    .header li a {
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
 
-body {
-    background: url("../images/mainBlurd.jpg") no-repeat center center fixed; 
-    background-size: cover;
 
+body {
+    background: url("../images/mainlogo/try2.jpg") no-repeat center center fixed;
+    background-size: cover;
 }
 
 .navbar {
-    background-color: #777;
+    background-color: #012F30;
     color: #e7e7e7;
     font-size: 1.3rem;
     text-transform: uppercase;
@@ -77,9 +70,8 @@ body {
 .header {}
 
 .header .navbar-brand {
-    height: 6.2rem;
     padding: 0;
-    min-height: 50px;
+    min-height: 62px;
 }
 
 .header .navbar-brand img {
@@ -92,16 +84,16 @@ body {
 
 .header .navbar a:hover,
 .header .navbar .active {
-    background-color: #4fcbc9;
+    background-color: #F44336;
 }
 
 .header li a {
-    height: 62px;
     line-height: 35px;
     font-family: 'Oswald', sans-serif;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 400;
     text-transform: uppercase;
+    min-height: 62px;
 }
 
 .mainLogo {
@@ -115,10 +107,20 @@ body {
 
 .mainLogo .title {
     position: absolute;
-    top: 0;
-    right: 85px;
-    width: 31%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0%);
     color: #575252;
+    text-align: center;
+    width: 100%;
+}
+
+.mainLogo .company {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    font-size: 13.4rem;
+    line-height: 4.5rem;
+    color: #ffffff;
 }
 
 .mainLogo .companyTitle {
@@ -126,7 +128,8 @@ body {
     font-weight: 600;
     font-size: 3.4rem;
     line-height: 4.5rem;
-    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 14rem;
 }
 
 .line {
@@ -136,10 +139,11 @@ body {
     font-family: OswaldRegular;
     font-size: 3rem;
     font-style: italic;
+    color: black;
 }
 
 .blueAccent {
-    background-color: #4fcbc9;
+    background-color: #F44336;
 }
 
 .whiteAccent {
@@ -147,7 +151,7 @@ body {
 }
 
 .grayAccent {
-    background-color: #777;
+    background-color: #012F30;
 }
 
 .articleSection {
@@ -168,12 +172,12 @@ body {
 
 #services button {
     border-radius: 50px;
-    width: 9.2rem;
+    width: 92px;
     padding: 0;
     font-size: 0.4rem;
-    background-color: #4fcbc9;
+    background-color: #F44336;
     color: #fff;
-    padding: 1px 3rem 0px 0px;
+    padding: 1px 30px 0px 0px;
     margin-top: 10px;
 }
 
@@ -182,13 +186,12 @@ body {
 }
 
 .articleSection h3 {
-    border-color: #4fcbc9;
+    border-color: #F44336;
     border-style: solid none;
     border-width: 0 0 1px 0;
     color: #202628;
-    font-family: 'Noto Sans', sans-serif;
     font-size: 2.1rem;
-    padding: 0px 40px;
+    padding: 10px 40px;
     text-transform: uppercase;
 }
 
@@ -196,16 +199,19 @@ body {
     padding-left: 0
 }
 
-
+.glyphicon {
+    font-size: 2.5rem;
+}
 
 #share-buttons img {
-    width: 5rem;
+    width: 5.5rem;
     /*padding: 5px;*/
     border: 0;
     box-shadow: 0;
     display: inline;
 }
-#copy img{
+
+#copy img {
     padding: 0;
 }
 
@@ -242,7 +248,7 @@ body {
     font-weight: 700;
     margin-top: 0;
     font-size: 1.6rem;
-    color: #4fcbc9
+    color: #F44336
 }
 
 .contacts .contact-info address {
@@ -254,7 +260,8 @@ body {
     font-size: 2rem;
     color: #767c7e
 }
-.contacts a:hover{
+
+.contacts a:hover {
     text-decoration: underline;
 }
 
@@ -275,4 +282,5 @@ body {
     color: #e7e7e7;
     font-size: 1.8rem;
     padding: 10px;
+    text-transform: uppercase;
 }
