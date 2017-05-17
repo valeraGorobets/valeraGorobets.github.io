@@ -46,16 +46,9 @@ html {
     }
 }
 
-@media screen and (max-width: 596px) {
-    .header li a {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-}
-
 
 body {
-    background: url("../images/mainlogo/try2.jpg") no-repeat center center fixed;
+    background: url("../images/backgroundImage.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 
