@@ -73,11 +73,12 @@ body {
     min-height: 62px;
 }
 
-.header .navbar-brand p{
+.header .navbar-brand p {
     margin-left: 10px;
     height: 100%;
     float: right;
 }
+
 .header a {
     line-height: 35px;
     font-family: 'Oswald', sans-serif;
@@ -89,8 +90,12 @@ body {
 }
 
 .header .navbar a:hover,
-.header .active {
+.header .navbar-right .active {
     background-color: #F44336;
+}
+
+.header .navbar .brandLink a:hover {
+    background-color: transparent;
 }
 
 .mainLogo {
