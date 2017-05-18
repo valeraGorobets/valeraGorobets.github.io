@@ -30,10 +30,6 @@ window.onload = function() {
     let links = ["emailLink", "facebookLink", "googleLink", "twitterLink", "vkLink"];
     links.map((link) => {
         document.getElementById(link).href += url;
-        if(link ==="twitterLink"){
-            // document.getElementById(link).href += "&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons";
-            // document.getElementById(link).href += "&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons";
-        }
     })
 }
 $(document).on('click','.navbar-collapse.in',function(e) {
