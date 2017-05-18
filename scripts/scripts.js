@@ -24,7 +24,8 @@ $("#copy").click(function() {
     $temp.val(document.URL).select();
     document.execCommand("copy");
     $temp.remove();
-})
+});
+
 window.onload = function() {
     let url = window.location.toString();
     let links = ["emailLink", "facebookLink", "googleLink", "twitterLink", "vkLink"];
@@ -32,8 +33,8 @@ window.onload = function() {
         document.getElementById(link).href += url;
     })
 }
-$(document).on('click','.navbar-collapse.in',function(e) {
-    if( $(e.target).is('a') ) {
+$(document).on('click', '.navbar-collapse.in', function(e) {
+    if ($(e.target).is('a')) {
         $(this).collapse('hide');
     }
 });

@@ -8,6 +8,13 @@
     src: url(../fonts/Oswald-Light.ttf);
 }
 
+@media screen and (max-width: 990px) {
+    body,
+    html {
+        font-size: 8px;
+    }
+}
+
 section:not(:last-child) {
     margin-bottom: 2.5rem;
 }
@@ -28,22 +35,11 @@ button {
 
 body,
 html {
-    padding: 0;
-    margin: 25px 0 0;
     font-family: Lato, sans-serif;
-    overflow-x: hidden;
     font-size: 10px;
-}
-
-.navbar-toggle {
+    margin: 25px 0 0;
+    overflow-x: hidden;
     padding: 0;
-}
-
-@media screen and (max-width: 990px) {
-    body,
-    html {
-        font-size: 8px;
-    }
 }
 
 body {
@@ -55,38 +51,42 @@ body {
     background-color: #012F30;
     color: #e7e7e7;
     font-size: 1.3rem;
-    text-transform: uppercase;
     min-height: 0;
+    text-transform: uppercase;
 }
 
-.header .navbar-brand img {
-    height: 30px;
-    width: 30px;
-    margin: 15px 0;
-    float: left;
+.header .navbar-toggle {
+    padding: 0;
 }
 
 .header .navbar-brand {
     font-size: 2rem;
     line-height: 30px;
-    padding: 0;
     min-height: 62px;
+    padding: 0;
+}
+
+.header .navbar-brand img {
+    float: left;
+    height: 30px;
+    margin: 15px 0;
+    width: 30px;
 }
 
 .header .navbar-brand p {
-    margin-left: 10px;
-    height: 100%;
     float: right;
+    height: 100%;
+    margin-left: 10px;
 }
 
 .header a {
-    line-height: 35px;
+    color: #fff;
     font-family: 'Oswald', sans-serif;
     font-size: 1.8rem;
     font-weight: 400;
-    text-transform: uppercase;
+    line-height: 35px;
     min-height: 62px;
-    color: #fff;
+    text-transform: uppercase;
 }
 
 .header .navbar a:hover,
@@ -95,7 +95,7 @@ body {
 }
 
 .header .navbar .brandLink a:hover {
-    background-color: transparent ;
+    background-color: transparent;
 }
 
 .mainLogo {
@@ -104,9 +104,9 @@ body {
 }
 
 .mainLogo img {
+    display: none;
     width: 100%;
 }
-
 
 
 /*
@@ -139,14 +139,14 @@ body {
 }
 */
 
-.line {
-    text-align: center;
-    position: relative;
-    padding: 7rem;
+.crossLine {
+    color: black;
     font-family: OswaldRegular;
     font-size: 3rem;
     font-style: italic;
-    color: black;
+    padding: 7rem;
+    position: relative;
+    text-align: center;
 }
 
 .coralAccent {
@@ -162,34 +162,14 @@ body {
 }
 
 .articleSection {
-    padding-top: 5rem;
     padding-bottom: 5rem;
+    padding-top: 5rem;
 }
 
 .articleSection h1 {
     font-family: OswaldRegular;
-    padding: 0 40px;
-}
-
-.articleSection .article {
-    margin-bottom: 30px;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 1.8rem;
-}
-
-#services button {
-    border-radius: 50px;
-    width: 92px;
-    padding: 0;
-    font-size: 0.4rem;
-    background-color: #F44336;
-    color: #fff;
-    padding: 1px 30px 0px 0px;
-    margin-top: 10px;
-}
-
-.articleSection h1 {
     font-size: 3.6rem;
+    padding: 0 40px;
 }
 
 .articleSection h3 {
@@ -202,6 +182,23 @@ body {
     text-transform: uppercase;
 }
 
+.articleSection .article {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+#services button {
+    background-color: #F44336;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 0.4rem;
+    margin-top: 10px;
+    padding: 0;
+    padding: 1px 30px 0px 0px;
+    width: 92px;
+}
+
 .articleSection .col-md-12 {
     padding-left: 0
 }
@@ -211,11 +208,10 @@ body {
 }
 
 #share-buttons img {
-    width: 5.5rem;
-    /*padding: 5px;*/
     border: 0;
     box-shadow: 0;
     display: inline;
+    width: 5.5rem;
 }
 
 #copy img {
@@ -232,15 +228,15 @@ body {
 }
 
 #map {
-    width: 100%;
-    height: 400px;
     background-color: grey;
+    height: 400px;
+    width: 100%;
 }
 
 .contacts .row {
-    padding: 30px 0;
+    border-width: 0 0 1px;
     border: solid #e7e7e7;
-    border-width: 0 0 1px
+    padding: 30px 0;
 }
 
 .contacts .row:first-of-type {
@@ -252,10 +248,10 @@ body {
 }
 
 .contacts .contact-info h3 {
+    color: #F44336;
+    font-size: 1.6rem;
     font-weight: 700;
     margin-top: 0;
-    font-size: 1.6rem;
-    color: #F44336
 }
 
 .contacts .contact-info address {
@@ -263,9 +259,9 @@ body {
 }
 
 .contacts .contact-info address a {
+    color: #767c7e;
     font-family: 'Lato Black', sans-serif;
     font-size: 2rem;
-    color: #767c7e
 }
 
 .contacts a:hover {
@@ -280,14 +276,11 @@ body {
     margin-top: 10px;
 }
 
-.footer p {
-    margin: 0;
-}
-
-.footer .ip {
-    font-family: OswaldRegular;
+.footer .copyright {
     color: #e7e7e7;
+    font-family: OswaldRegular;
     font-size: 1.8rem;
+    margin: 0;
     padding: 10px;
     text-transform: uppercase;
 }
