@@ -41,5 +41,5 @@ $(document).on('click', '.navbar-collapse.in', function(e) {
 
 
 $(document).ready(function() {
-    $('#mainLogoImage').fadeIn(900);
+    $('#mainLogoImage').fadeIn(1000);
 });
