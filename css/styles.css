@@ -46,13 +46,12 @@ html {
     }
 }
 
-
 body {
     background: url("../images/backgroundImage.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 
-.navbar {
+.header .navbar {
     background-color: #012F30;
     color: #e7e7e7;
     font-size: 1.3rem;
@@ -60,33 +59,30 @@ body {
     min-height: 0;
 }
 
-.header {}
-
-.header .navbar-brand {
-    padding: 0;
-    min-height: 62px;
-}
-
 .header .navbar-brand img {
     height: 100%;
 }
 
-.header .navbar a {
-    color: #fff;
+.header .navbar-brand {
+    font-size: 2rem;
+    line-height: 30px;
+    padding: 0 20px;
+    min-height: 62px;
 }
 
-.header .navbar a:hover,
-.header .navbar .active {
-    background-color: #F44336;
-}
-
-.header li a {
+.header a {
     line-height: 35px;
     font-family: 'Oswald', sans-serif;
     font-size: 1.8rem;
     font-weight: 400;
     text-transform: uppercase;
     min-height: 62px;
+    color: #fff;
+}
+
+.header .navbar a:hover,
+.header .active {
+    background-color: #F44336;
 }
 
 .mainLogo {
@@ -98,6 +94,8 @@ body {
     width: 100%;
 }
 
+
+/*
 .mainLogo .title {
     position: absolute;
     top: 30%;
@@ -108,8 +106,9 @@ body {
     width: 100%;
 }
 
-.mainLogo .company {
+.mainLogo .companyName {
     font-family: 'Ubuntu', sans-serif;
+    ///////imort ubunto font 
     font-weight: 600;
     font-size: 13.4rem;
     line-height: 4.5rem;
@@ -124,6 +123,7 @@ body {
     color: #ffffff;
     margin-top: 14rem;
 }
+*/
 
 .line {
     text-align: center;
@@ -135,7 +135,7 @@ body {
     color: black;
 }
 
-.blueAccent {
+.coralAccent {
     background-color: #F44336;
 }
 
