@@ -19,6 +19,12 @@ section:not(:last-child) {
     margin-bottom: 2.5rem;
 }
 
+@media screen and (max-width: 766px) {
+    section:not(:last-child) {
+        margin-bottom: 0px;
+    }
+}
+
 a:link,
 a:visited,
 a:hover,
@@ -92,7 +98,7 @@ body {
 .header .navbar a:hover,
 .header .navbar a:visited,
 .header .navbar-right .active {
-    background-color: #F44336;
+    background-color: #FF5722;
 }
 
 .header .navbar .brandLink a:hover {
@@ -115,15 +121,15 @@ body {
     position: absolute;
     top: 30%;
     left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, -5%);
     color: #575252;
     text-align: center;
     width: 100%;
 }
 
 .mainLogo .companyName {
-    font-family: 'Ubuntu', sans-serif;
-    ///////imort ubunto font 
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 5px;
     font-weight: 600;
     font-size: 13.4rem;
     line-height: 4.5rem;
@@ -136,9 +142,8 @@ body {
     font-size: 3.4rem;
     line-height: 4.5rem;
     color: #ffffff;
-    margin-top: 14rem;
-}
-*/
+    margin-top: 9rem;
+}*/
 
 .crossLine {
     color: black;
@@ -149,19 +154,20 @@ body {
     position: relative;
     text-align: center;
 }
+
 @media screen and (max-width: 990px) {
-   .crossLine {
+    .crossLine {
         font-size: 2.5rem;
     }
 }
 
 .coralAccent {
-    background-color: #fff;
+    color: #fff;
+    background-color: #FF5722;
 }
 
 .whiteAccent {
-    /*background-color: #ECECEC;*/
-    background-color: #ffffff;
+    background-color: #f9f9f9;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -181,7 +187,7 @@ body {
 }
 
 .articleSection h3 {
-    border-color: #F44336;
+    border-color: #FF5722;
     border-style: solid none;
     border-width: 0 0 1px 0;
     color: #202628;
@@ -197,7 +203,7 @@ body {
 }
 
 #services button {
-    background-color: #F44336;
+    background-color: #FF5722;
     border-radius: 50px;
     color: #fff;
     font-size: 0.4rem;
@@ -205,6 +211,12 @@ body {
     padding: 0;
     padding: 1px 30px 0px 0px;
     width: 92px;
+}
+#services h1{
+    padding-bottom: 20px;
+}
+#services .article{
+    padding-left: 20px;
 }
 
 .articleSection .col-md-12 {
@@ -242,9 +254,7 @@ body {
 }
 
 .contacts .row {
-    border-width: 0 0 1px;
-    border: solid #e7e7e7;
-    padding: 30px 0;
+    padding: 25px 0;
 }
 
 .contacts .row:first-of-type {
@@ -256,14 +266,14 @@ body {
 }
 
 .contacts .contact-info h3 {
-    color: #F44336;
+    color: #FF5722;
     font-size: 1.6rem;
     font-weight: 700;
     margin-top: 0;
 }
 
 .contacts .contact-info address {
-    margin: 0
+    margin: 0;
 }
 
 .contacts .contact-info address a {
