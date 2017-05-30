@@ -17,22 +17,6 @@ function initMap() {
     });
 }
 
-$("#copy").click(function() {
-    alert("Ссылка скопирована!")
-    var $temp = $("<input>");
-    $("body").append($temp);
-    $temp.val(document.URL).select();
-    document.execCommand("copy");
-    $temp.remove();
-});
-
-window.onload = function() {
-    let url = window.location.toString();
-    let links = ["emailLink", "facebookLink", "googleLink", "twitterLink", "vkLink"];
-    links.map((link) => {
-        document.getElementById(link).href += url;
-    })
-}
 $(document).on('click', '.navbar-collapse.in', function(e) {
     if ($(e.target).is('a')) {
         $(this).collapse('hide');
@@ -41,7 +25,12 @@ $(document).on('click', '.navbar-collapse.in', function(e) {
 
 
 $(document).ready(function() {
-    $('#mainLogoImage').fadeIn(900);
+    let fadeInTime = 900;
+    if ($(window).width() >= 751) {
+        $('#mainLogoImageMobile').fadeIn(fadeInTime);
+    } else {
+        $('#mainLogoImageDesktop').fadeIn(fadeInTime);
+    }
 });
 
 $("#navbar a").on('click', function(event) {
@@ -55,3 +44,21 @@ $("#navbar a").on('click', function(event) {
         });
     }
 });
+
+
+
+// window.onload = function() {
+//     let url = window.location.toString();
+//     let links = ["emailLink", "facebookLink", "googleLink", "twitterLink", "vkLink"];
+//     links.map((link) => {
+//         document.getElementById(link).href += url;
+//     })
+// }
+// $("#copy").click(function() {
+//     alert("Ссылка скопирована!")
+//     var $temp = $("<input>");
+//     $("body").append($temp);
+//     $temp.val(document.URL).select();
+//     document.execCommand("copy");
+//     $temp.remove();
+// });

@@ -8,6 +8,22 @@
     src: url(../fonts/Oswald-Light.ttf);
 }
 
+section {
+    margin-bottom: 2.5rem;
+}
+
+@media screen and (min-width:751px) {
+    .hidden_desktop {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .hidden_mobile {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 990px) {
     body,
     html {
@@ -15,14 +31,14 @@
     }
 }
 
-section:not(:last-child) {
-    margin-bottom: 2.5rem;
-}
-
 @media screen and (max-width: 766px) {
-    section:not(:last-child) {
+    section{
         margin-bottom: 0px;
     }
+    #share {
+        background-color: #f9f9f9;
+    }
+
 }
 
 a:link,
@@ -115,8 +131,6 @@ body {
     width: 100%;
 }
 
-
-/*
 .mainLogo .title {
     position: absolute;
     top: 30%;
@@ -143,7 +157,7 @@ body {
     line-height: 4.5rem;
     color: #ffffff;
     margin-top: 9rem;
-}*/
+}
 
 .crossLine {
     color: black;
@@ -212,10 +226,12 @@ body {
     padding: 1px 30px 0px 0px;
     width: 92px;
 }
-#services h1{
+
+#services h1 {
     padding-bottom: 20px;
 }
-#services .article{
+
+#services .article {
     padding-left: 20px;
 }
 
@@ -227,25 +243,29 @@ body {
     font-size: 2.5rem;
 }
 
+/*#copy img {
+    padding: 0;
+}
 #share-buttons img {
     border: 0;
     box-shadow: 0;
     display: inline;
-    width: 5.5rem;
+    width: 5rem;
 }
 
-#copy img {
-    padding: 0;
-}
 
 #share-buttons img:hover {
     transform: scale(1.1, 1.1)
 }
-
+@media screen and (max-width: 766px) {
+    #share-buttons img {
+        width: 4rem;
+    }
+}
 #share-buttons #copy {
     border-radius: 50%;
     padding: 0;
-}
+}*/
 
 #map {
     background-color: grey;
@@ -288,10 +308,6 @@ body {
 
 .contacts .contact-info .row:last-of-type {
     padding: 34px 0
-}
-
-.footer {
-    margin-top: 10px;
 }
 
 .footer .copyright {

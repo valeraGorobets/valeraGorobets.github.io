@@ -50,8 +50,9 @@
     <main>
         <section id="mainLogo">
             <div class="container mainLogo ">
-                <img src="images/companyMainLogo.jpg" id="mainLogoImage" alt="companyMainLogo">
-                <!--  <div class="title">
+                <img class="hidden_mobile" id="mainLogoImageDesktop" src="images/companyMainLogoMobile2.jpg" alt="companyMainLogo"/>
+                <img class="hidden_desktop" id="mainLogoImageMobile" src="images/companyMainLogoDesktop.jpg" alt="companyMainLogo"/>
+                 <!-- <div class="title">
                     <h1 class="companyName">Наши Дети</h1>
                     <h1 class="companyTitle">Центр раннего развития и<br> восстановительного обучения</h1>
                 </div> -->
@@ -63,13 +64,13 @@
                 <div class="col-md-8">
                     Мы предлагаем индивидуальные занятия по двигательному и речевому развитию для детей раннего и дошкольного возраста, имеющих психофизические нарушения:
                     <ul>
-                        <li>Органические поражения центральной нервной системы</li>
-                        <li>ДЦП</li>
-                        <li>Задержки моторного, психомоторного и речевого развития</li>
-                        <li>Генетические и хромосомные заболевания, врожденные аномалии</li>
-                        <li>Периферические парезы и параличи</li>
-                        <li>Гидроцефальный синдром, судорожный синдром</li>
-                        <li>Тяжелые нарушения речи</li>
+                        <li>Органические поражения центральной нервной системы,</li>
+                        <li>ДЦП,</li>
+                        <li>Задержки моторного, психомоторного и речевого развития,</li>
+                        <li>Генетические и хромосомные заболевания,</li>
+                        <li>Периферические парезы и параличи,</li>
+                        <li>Гидроцефальный синдром, судорожный синдром,</li>
+                        <li>Тяжелые нарушения речи.</li>
                     </ul>
                 </div>
                 <div class="col-sm-2 col-xs-2">
@@ -95,9 +96,9 @@
                     </div>
                     <div class="col-md-12">
                         <article class="article">
-                            <ul>Проводят диагностику и индивидуальные коррекционно-обучающие занятия с детьми
-                                <li>с выраженными задержками психо-речевого развития</li>
-                                <li> с расстройствами коммуникации вследствии тяжелых и множественных нарушений в развитии</li>
+                            <ul>Проводят диагностику и индивидуальные коррекционно-обучающие занятия с детьми:
+                                <li>с выраженными задержками психо-речевого развития,</li>
+                                <li> с расстройствами коммуникации вследствии тяжелых и множественных нарушений в развитии,</li>
                                 <li> с различными формами дислалии, дизартрии, ринолалии, общим недоразвитием речи.</li>
                             </ul>
                         </article>
@@ -142,7 +143,7 @@
                 <div class="col-md-12">
                     <article class="article">
                         <div class="col-md-4">
-                            <p>Консультации врача невролога. Совместный прием невролога и логопеда.
+                            <p>Консультации врача-невролога, врача-педиатра. Совместный прием невролога и логопеда.
                                 <div class="hide">
                                     Дифференциальная диагностика психоневрологических заболеваний, нарушений аутистического спектра, особенностей поведения и эмоционально-волевой сферы.
                                 </div>
@@ -155,7 +156,7 @@
                             <p>
                                 На базе нашего Центра мы предлагаем возможность кратковременного пребывания детей.
                                 <div class="hide">
-                                    У нас комфортные условия, доброжелательная атмосфера, гибкий график, а опытный педагог не даст детям скучать, учитывая индивидуальные потребности каждого ребенка.
+                                    У нас комфортные условия, доброжелательная атмосфера, гибкий график, а опытный педагог займет детей, учитывая индивидуальные потребности каждого ребенка.
                                 </div>
                                 <button type="button" class="btn moreButton hideForAtime">
                                     <span class="glyphicon">&#xe234;</span>
@@ -218,32 +219,35 @@
                 <div id="map"></div>
             </div>
         </section>
-        <section id="share" class="crossLine">
+
+    <!-- For adding section share you need to uncomment functions in asripts.js and styles.css files -->
+
+        <!-- <section id="share" class="crossLine">
             <div id="share-buttons">
-                <!-- Buffer -->
+                
                 <button id="copy"><img src="https://simplesharebuttons.com/images/somacro/buffer.png" alt="Buffer" /></button>
-                <!-- Email -->
+                
                 <a id="emailLink" href="mailto:?Subject=Наши Дети&amp;Body=Центр раннего развития и восстановительного обучения: ">
                     <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
                 </a>
-                <!-- Facebook -->
+                
                 <a id="facebookLink" href="http://www.facebook.com/sharer.php?u=" target="_blank">
                     <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
                 </a>
-                <!-- Google+ -->
+                
                 <a id="googleLink" href="https://plus.google.com/share?url=" target="_blank">
                     <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
                 </a>
-                <!-- Twitter -->
+                
                 <a id="twitterLink" href="https://twitter.com/share?url=" target="_blank">
                     <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
                 </a>
-                <!-- VK -->
+                
                 <a id="vkLink" href="http://vkontakte.ru/share.php?url=" target="_blank">
                     <img src="https://simplesharebuttons.com/images/somacro/vk.png" alt="VK" />
                 </a>
             </div>
-        </section>
+        </section> -->
     </main>
     <footer class="footer grayAccent text-center">
         <div class="container ">
