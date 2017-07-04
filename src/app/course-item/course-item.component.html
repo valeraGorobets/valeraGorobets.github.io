@@ -1,0 +1,51 @@
+<div class="card">
+	<div class="info clearfix">
+		<h2>{{courseInfo.name}}</h2>
+		<p>{{courseInfo.description}}</p>
+		<p>Your Review : <b>{{courseInfo.review}}</b></p>
+		<div class="timeBlock pull-right text-right">
+			<p>{{courseInfo.creationDate | date : "MMM, dd yyyy: hh:mm"}}</p>
+			<p>{{courseInfo.duration}}</p>
+		</div>
+	</div>
+	<div>
+		<app-chart [chartData]="courseInfo.chartData" [id] ="courseInfo.id"></app-chart>
+	</div>
+	<div class="controllers pull-right">
+		<button type="button" class="btn btn-link" (click)="edit()">Edit</button>
+		<button type="button" class="btn btn-link" (click)="deleteItem(courseInfo)">Delete</button>
+	</div>
+</div>
+<app-popup *ngIf="isEdited" header="Editing course">
+	<form [formGroup]="editForm" (ngSubmit)="submitChanges(editForm.value)" class="clearfix">
+		<div class="form-group">
+			<label for="courseNameInput">Edit Name</label>
+			<input type="text" class="form-control" id="courseNameInput" formControlName="name" value="{{courseInfo.name}}">
+		</div>
+		<div class="form-group">
+			<label for="courseNameInput">Edit Description</label>
+			<input type="text" class="form-control" id="courseDescriptionInput" formControlName="description" value="{{courseInfo.description}}">
+		</div>
+		<div class="form-group">
+			<label for="courseNameInput">Edit CreationDate</label>
+			<input type="date" class="form-control" id="courseCreationDateInput" formControlName="creationDate" value="{{courseInfo.creationDate}}">
+		</div>
+		<div class="form-group">
+			<label for="courseNameInput">Edit Duration</label>
+			<input type="text" class="form-control" id="courseDurationInput" formControlName="duration" value="{{courseInfo.duration}}">
+		</div>
+		<div class="form-group">
+			<label for="courseNameInput">Put a Review</label>
+			<div class="radio-toolbar">
+				<div *ngFor="let mark of chartDataKeys ">
+					<input type="radio" id="radio{{mark}}" formControlName="review" value="{{mark}}" >
+					<label for="radio{{mark}}" class="active">{{mark}}</label>			
+				</div>
+			</div>
+		</div>
+		<div class="controllers pull-right">
+			<button type="submit" class="btn btn-primary">Submit</button>
+			<button type="close" class="btn btn-primary" (click)="closeEditing()">Close</button>
+		</div>
+	</form>
+</app-popup>

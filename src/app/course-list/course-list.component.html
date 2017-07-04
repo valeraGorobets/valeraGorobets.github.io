@@ -1,0 +1,7 @@
+<app-action-panel (notifySearch)="onNotifySearch($event)" (notifyAddNewItem)="onNotifyAddNewItem($event)"></app-action-panel>
+<section>
+    <div *ngIf="!filteredCourseList.length">
+        <h1>No Courses found...</h1>
+    </div>
+    <app-course-item *ngFor="let course of filteredCourseList" [courseInfo]="course" (notifyDelete)="onNotifyDelete($event)"></app-course-item>
+</section>

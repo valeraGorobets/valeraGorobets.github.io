@@ -1,0 +1,30 @@
+.popup {
+	background: rgba(0, 0, 0, 0.6);
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+.card {
+	background-color: #fff;
+	left: 50%;
+	position: relative;
+	top: 20%;
+	transform: translate(-50%);
+	width: 500px;
+}
+
+.card-header {
+	background-color: #e0e0e0;
+	font-size: 20px;
+	padding: 5px;
+}
+
+.card-body {
+	background-color: #fafafa;
+	border: solid #cccccc 1px;
+	margin: 10px;
+	padding: 15px;
+}

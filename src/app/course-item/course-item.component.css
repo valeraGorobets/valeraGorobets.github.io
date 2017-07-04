@@ -1,0 +1,64 @@
+.card {
+	border-radius: 7px;
+	border: solid #cccccc 1px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	display: inline-block;
+	font-family: 'Roboto', sans-serif;
+	margin: 10px;
+	padding: 10px;
+	transition: 0.3s;
+	width: 400px;
+}
+
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+}
+
+.card > div:nth-last-child(2) {
+	border-bottom: solid #cccccc 1px;
+}
+
+.info > h2 {
+	margin: 10px 0 5px;
+}
+
+.info > p {
+	margin: 20px 0 10px;
+	font-size: 22px;
+}
+
+button,
+p {
+	font-size: 18px;
+}
+
+.input-group {
+	width: 40%;
+}
+
+.btn-group {
+	width: 100%;
+}
+
+.radio-toolbar input[type="radio"] {
+	display: none;
+}
+
+.radio-toolbar > div{
+	display: inline-block;
+	background-color: 
+}
+
+.radio-toolbar label {
+	display: inline-block;
+	background-color: #ddd;
+	padding: 4px 11px;
+	font-family: Arial;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.radio-toolbar input[type="radio"]:checked+label {
+	background-color: #337AB7;
+}
