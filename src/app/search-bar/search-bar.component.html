@@ -1,0 +1,9 @@
+<nav>
+  <div class="nav-wrapper">
+    <div class="input-field">
+      <input id="search" type="search" [(ngModel)]="searchCityValue" (keypress)="onkeypress($event)">
+      <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+      <i class="material-icons" (click)='submitSearch()'>send</i>
+    </div>
+  </div>
+</nav>

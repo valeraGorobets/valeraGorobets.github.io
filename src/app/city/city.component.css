@@ -1,0 +1,70 @@
+.card {
+  background-size: 400px 400px;
+  color:white;
+  display: inline-block;
+  height: 300px;
+  margin: 20px;
+  padding: 5px;
+  position: relative;
+  width: 300px;
+}
+.card .card-title{
+  font-size: 35px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+.condition{
+  font-size: 24px;
+}
+
+.condition-params{
+  font-size: 20px;
+}
+
+.temp {
+  bottom: -20px;
+  font-size: 110px;
+  font-weight: 100;
+  position: absolute;
+  right: 20px;
+}
+
+.Sunny{
+  background-image: url("./app/images/Sunny.gif");
+}
+
+.Clear{
+  background-image: url("./app/images/Clear.gif");
+}
+
+.Breezy{
+  background-image: url("./app/images/Breezy.gif");
+}
+
+.Showers{
+  background-image: url("./app/images/Showers.gif");
+}
+
+.Cloudy{
+  background-image: url("./app/images/Cloudy.gif");
+}
+
+.PartlyCloudy{
+  background-image: url("./app/images/partlyCloudy.gif");
+}
+
+.MostlyCloudy{
+  background-image: url("./app/images/mostlyCloudy.gif");
+}
+
+.Snow{
+  background-image: url("./app/images/Snow.gif");
+}
+
+.Snow{
+  background-image: url("./app/images/Snow.gif");
+}
+
+.Default{
+  background-image: url("./app/images/default.gif");
+}

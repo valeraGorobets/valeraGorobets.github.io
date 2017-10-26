@@ -1,0 +1,18 @@
+.progress {
+  background-color: #5e92f3;
+  margin: 0;
+}
+
+.progress .indeterminate {
+  background-color: #ff5131;
+}
+
+.error {
+  color: #fafafa;
+  background-color: #c62828;
+  border: 1px solid;
+  margin: 10px 0px;
+  padding: 15px 10px 15px 50px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}

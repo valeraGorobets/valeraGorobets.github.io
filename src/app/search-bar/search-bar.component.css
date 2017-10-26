@@ -1,0 +1,18 @@
+nav {
+  background-color: #003c8f;
+  padding: 10px;
+}
+
+.nav-wrapper {
+  margin: 0 auto;
+  width: 50%;
+  background-color: #1565c0
+}
+
+.input-field label {
+  transform: translateY(0px);
+}
+
+.material-icons {
+  transform: translateY(-10px);
+}

@@ -1,0 +1,8 @@
+<app-search-bar (notifySearch)="onNotifySearch($event)"></app-search-bar>
+<div class="progress" *ngIf="isLoading">
+  <div class="indeterminate"></div>
+</div>
+<div class="error" *ngIf="isError">Can't find weather for such city</div>
+<section>
+  <app-city *ngFor="let weather of weatherList" [weatherInfo]="weather"></app-city>
+</section>

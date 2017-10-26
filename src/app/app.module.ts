@@ -4,26 +4,25 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { ActionPanelComponent } from './action-panel/action-panel.component';
-import { CourseListComponent } from './course-list/course-list.component';
-import { CourseItemComponent } from './course-item/course-item.component';
 import { FooterComponent } from './footer/footer.component';
+import { SearchBarComponent } from './search-bar/search-bar.component';
+import { WeatherListComponent } from './weather-list/weather-list.component';
+import { CityComponent } from './city/city.component';
 
-import { CourseManagementService } from './services/course-management.service';
-import { PopupComponent } from './popup/popup.component';
-import { ChartComponent } from './chart/chart.component';
+import {YahooWeatherService} from './services/yahoo-weather.service';
+import { CelsiusPipe } from './pipes/celsius.pipe';
+import { MpsPipe } from './pipes/mps.pipe'
+
 
 @NgModule({
 	declarations: [
 		AppComponent,
-		HeaderComponent,
-		ActionPanelComponent,
-		CourseListComponent,
-		CourseItemComponent,
 		FooterComponent,
-		PopupComponent,
-		ChartComponent
+		SearchBarComponent,
+		WeatherListComponent,
+		CityComponent,
+		CelsiusPipe,
+		MpsPipe,
 	],
 	imports: [
 		BrowserModule,
@@ -31,7 +30,7 @@ import { ChartComponent } from './chart/chart.component';
 		HttpModule,
 		ReactiveFormsModule,
 	],
-	providers: [CourseManagementService],
+	providers: [YahooWeatherService],
 	bootstrap: [AppComponent]
 })
 export class AppModule { }

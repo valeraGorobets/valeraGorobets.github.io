@@ -1,0 +1,9 @@
+<div class="{{imageClassName}} card ">
+  <h2 class="card-title">{{location.city}},</h2>
+  <h2 class="card-title">{{location.country}}</h2>
+  <div class="condition">{{condition.text}}</div>
+  <div class="condition-params">Wind {{windSpeed | mps }} m/s; Humidity: {{humidity}}%</div>
+  <div class="row temp">
+    <div class="text-xs-center pull-right">{{temp | celsius}}&deg;</div>
+  </div>
+</div>
